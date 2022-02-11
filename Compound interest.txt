@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.lang.Math;
+class CompoundInterest{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Principal amount :-" );
+        int principle = sc.nextInt();
+
+        System.out.println("Enter Rate :-");
+        float rate = sc.nextFloat();
+
+        System.out.println("Enter Time :-");
+        int time = sc.nextInt();
+
+        System.out.println("Enter no. of times of amount:- ");
+        int no = sc.nextInt();
+
+        float x = 1+rate/time;
+        float y = time * no;
+        int z = (int) Math.pow(x,y);
+        float i = principle * z;
+        System.out.println("The compound interest is :-" + i);
+    }
+}
